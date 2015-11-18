@@ -1,7 +1,7 @@
 {
-    "title": "Custom form field",
+    "title": "Date form field",
     "version": "1.00",
-    "name": "CustomFormField",
-    "description": "Illustrates how to create custom form field.",
-    "author": "ImpressPages"
+    "name": "DateFormField",
+    "description": "Date form field.",
+    "author": "Flakerim Ismani"
 }
