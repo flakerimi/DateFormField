@@ -1,26 +1,26 @@
 <?php
 /**
- * @package   ImpressPages
+ * @package   DateFormField
  */
 
 
 /**
- * Created by PhpStorm.
- * User: mangirdas
+ * Created by MetroLLC.
+ * User: flakerimi
  * Date: 6/30/14
  * Time: 2:32 PM
  */
 
-namespace Plugin\CustomFormField;
+namespace Plugin\DateFormField;
 
 
 class Filter
 {
     public static function ipWidgetFormFieldTypes($fieldTypes, $info = null)
     {
-        $fieldTitle = __('On / Off', 'CustomFormField', false);
+        $fieldTitle = __('Date', 'DateFormField', false);
 
-        $fieldTypes['OnOffField'] = new \Ip\Internal\Content\FieldType('OnOffField', '\Plugin\CustomFormField\OnOffField', $fieldTitle);
+        $fieldTypes['DateField'] = new \Ip\Internal\Content\FieldType('DateField', '\Plugin\DateFormField\DateField', $fieldTitle);
 
         return $fieldTypes;
     }
