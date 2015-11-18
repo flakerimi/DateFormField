@@ -1,17 +1,16 @@
 <?php
 /**
- * @package   ImpressPages
+ * @package   DateFormField
  */
 
 
 /**
- * Created by PhpStorm.
- * User: maskas
- * Date: 6/3/14
- * Time: 3:36 PM
+ * Created by Metrollc.
+ * User: flakerimi
+ * Date: 18/11/15
  */
 
-namespace Plugin\CustomFormField;
+namespace Plugin\DateFormField;
 
 
 class Event
@@ -19,8 +18,8 @@ class Event
     public static function ipBeforeController()
     {
         //just add js and css
-        ipAddJs('assets/onOffField.js');
-        ipAddJs('assets/initOnOffField.js');
-        ipAddCss('assets/onoff.css');
+      //  ipAddJs('assets/dateField.js');
+      //  ipAddJs('assets/initDateField.js');
+       // ipAddCss('assets/date.css');
     }
 }
