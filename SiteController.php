@@ -11,22 +11,22 @@
  * Time: 11:36 PM
  */
 
-namespace Plugin\CustomFormField;
+namespace Plugin\DateFormField;
 
 
 class SiteController
 {
 
     /**
-     * Render example form with on / off field
-     * Access this controller by visiting example.com?sa=CustomFormField
+     * Render example form with date field
+     * Access this controller by visiting example.com?sa=DateFormField
      * @return string
      */
     public function index()
     {
         $content = '';
 
-        $content .= ipRenderWidget('Heading', array('title' => 'Example usage'));
+        $content .= ipRenderWidget('Heading', array('title' => 'Example Date Field usage'));
 
         $form = new \Ip\Form();
 
@@ -38,12 +38,11 @@ class SiteController
             ));
         $form->addField($field);
 
-        $field = new \Plugin\CustomFormField\OnOffField(
+        $field = new \Plugin\DateFormField\DateField(
             array(
-                'name' => 'inputFieldName', // HTML "name" attribute
-                'label' => 'Set something on / off', // Field label that will be displayed next to input field
-                'value' => 1 //1 means on by default
-            ));
+                'name' => 'date', // HTML "name" attribute
+                'label' => 'Choose a Date', // Field label that will be displayed next to input field
+             ));
         $form->addField($field);
 
         $field = new \Ip\Form\Field\Submit (
